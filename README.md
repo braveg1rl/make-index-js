@@ -2,7 +2,26 @@
 
 Generates JS code with require statements from given paths.
 
+This is primarily useful for dynamically generating "index files" for files contained in a particular directory, and in cases where dynamic `require` calls won't work because because they can't to be picked up by browserify or similar bundlers.
+
 ## Usage
+
+```
+var makeIndexJS = require("make-index-js")
+console.log(makeIndexJS({"name":"./name.js"}))
+```
+
+Yields the following output:
+
+```
+module.exports = {
+  "name": "./name.js"
+}
+```
+
+... ready to be written to a file.
+
+`path` can be any value that `require` accepts.
 
 ## Credits
 

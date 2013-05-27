@@ -10,6 +10,6 @@ makeIndexJSFromObject = (modules) ->
 """
 
 makePropertyLiteral = (name, stringValue) ->
-  nameLiteral = JSON.stringify name
-  pathLiteral = JSON.stringify stringValue
+  nameLiteral = JSON.stringify name.toString()
+  pathLiteral = JSON.stringify stringValue.toString()
   """  #{nameLiteral}: require(#{pathLiteral})"""

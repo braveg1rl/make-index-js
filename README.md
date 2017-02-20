@@ -1,5 +1,7 @@
 # make-index-js [![Build Status](https://travis-ci.org/meryn/make-index-js.png?branch=master)](https://travis-ci.org/meryn/make-index-js) [![Dependency Status](https://david-dm.org/meryn/make-index-js.png)](https://david-dm.org/meryn/make-index-js)
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/braveg1rl/make-index-js.svg)](https://greenkeeper.io/)
+
 Generates JS code with require statements from given paths.
 
 This is primarily useful for dynamically generating "index files" for files contained in a particular directory, and in cases where dynamic `require` calls won't work because because they can't to be picked up by browserify or similar bundlers.
